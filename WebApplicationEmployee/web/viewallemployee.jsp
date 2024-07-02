@@ -44,7 +44,7 @@ request.setAttribute("list", list);
                 <td>${s.getEmail()}</td>
                 <td>${s.getCell()}</td>
                 <td>
-                    <a href="#">Edit</a>
+                    <a href="updateemployeeform.jsp?id=${s.getId()}">Edit</a>
                     <a href="deleteemployee.jsp?id=${s.getId()}">Delete</a>
                 
                 </td>
