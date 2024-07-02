@@ -13,5 +13,6 @@
     </head>
     <body>
         <a href="studentaddform.jsp">Add Student</a>
+        <a href="viewallstudent.jsp">View Student</a>
     </body>
 </html>
