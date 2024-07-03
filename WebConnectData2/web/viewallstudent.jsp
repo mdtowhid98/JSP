@@ -5,7 +5,7 @@
 
 <%
 
-List<Student>list=StudentDao.viewAllEmployee();
+List<Student> list=StudentDao.viewAllEmployee();
 
 request.setAttribute("list",list);
 
@@ -38,7 +38,7 @@ request.setAttribute("list",list);
                 <td>${s.getEmail()}</td>
                 <td>
                     
-                    <a href="updatestudentaddform.jsp?=${s.getId()}">Edit</a>
+                    <a href="updatestudentaddform.jsp?id=${s.getId()}">Edit</a>
                     <a href="deletestudent.jsp?id=${s.getId()}">Delete</a>
                 </td>
                 
