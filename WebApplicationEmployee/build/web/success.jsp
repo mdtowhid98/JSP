@@ -12,7 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <div>
         <h1 style="color:green">Save Success</h1>
         <%@include file="employeeaddform.jsp" %>
+        </div>
     </body>
 </html>
