@@ -88,4 +88,61 @@ public class EmployeeDao {
    
    }
    
+   public static void updateEmployee(Employee e) {
+
+        sql = "update employee set name=?,cell=? where id=?";
+              
+
+        try {
+            ps = DbUtil.getCon().prepareStatement(sql);
+
+            ps.setString(1, e.getName());
+           
+            ps.setString(2, e.getCell());
+            ps.setInt(3, e.getId());
+
+            ps.executeUpdate();
+
+            ps.close();
+            DbUtil.getCon().close();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    public static Employee getById(int id) {
+
+        Employee e = null;
+
+        sql = "select * from employee where id=?";
+      
+        try {
+            ps = DbUtil.getCon().prepareStatement(sql);
+            
+            ps.setInt(1, id);
+            
+            rs=ps.executeQuery();
+            
+            while (rs.next()) {  
+                
+                e=new Employee(
+                        rs.getInt("id"), 
+                        rs.getString("name"), 
+                        
+                        rs.getString("cell")
+                );
+                
+            }
+            ps.close();
+            DbUtil.getCon().close();
+            rs.close();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return e;
+    }
+   
 }

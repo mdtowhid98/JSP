@@ -14,10 +14,10 @@
     <body>
         <h1>Add Employee</h1>
         
-        <form action="savestudent.jsp">
+        <form action="savestudent.jsp" method="post">
             
             Name:<input type="text" name="name"><br> 
-            Name:<input type="email" name="email"><br> 
+            Email:<input type="email" name="email"><br> 
             
             <input type="submit" value="Save">
             

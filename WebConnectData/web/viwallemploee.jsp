@@ -38,7 +38,7 @@ request.setAttribute("list",list);
                 <td>${e.getName()}</td>
                 <td>${e.getCell()}</td>
                 <td>
-                    <a href="#">Edit</a>
+                    <a href="updateemployeeform.jsp?id=${e.getId()}">Edit</a>
                     <a href="deleteemployee.jsp?id=${e.getId()}">Delete</a>
                 </td>
             </tr>

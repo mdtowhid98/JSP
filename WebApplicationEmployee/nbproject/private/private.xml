@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/deleteemployee.jsp</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/employeeaddform.jsp</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/updateemployee.jsp</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/src/java/dao/EmployeeDao.java</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/updateemployeeform.jsp</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/home.jsp</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/saveemployee.jsp</file>
-            <file>file:/F:/GitHub/JAVA/WebApplicationEmployee/web/viewallemployee.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
