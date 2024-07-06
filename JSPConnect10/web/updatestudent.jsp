@@ -4,7 +4,7 @@
 
 <%
 
-StudentDao.saveStudent(s);
+StudentDao.updateStudent(s);
 
 
     

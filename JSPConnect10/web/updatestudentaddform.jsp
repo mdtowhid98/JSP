@@ -23,8 +23,8 @@
             <input type="hidden" name="id" value="<%=s.getId()%>">
             
             Name: <input type="text" name="name" value="<%=s.getName()%>"> <br>
-            Address: <input type="text" name="name" value="<%=s.getAddress()%>"> <br>
-            Email: <input type="email" name="name" value="<%=s.getEmail()%>"> <br>
+            Address: <input type="text" name="address" value="<%=s.getAddress()%>"> <br>
+            Email: <input type="email" name="email" value="<%=s.getEmail()%>"> <br>
             
             Cell: <input type="text" name="cell" value="<%=s.getCell()%>"> <br>
             
