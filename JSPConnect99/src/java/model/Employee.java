@@ -8,23 +8,26 @@ public class Employee {
     private String email;
     private String cell;
     private String gender;
+    private String subject;
 
     public Employee() {
     }
 
-    public Employee(int id, String name, String email, String cell,String gender) {
+    public Employee(int id, String name, String email, String cell,String gender,String subject) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.cell = cell;
         this.gender = gender;
+        this.subject = subject;
     }
 
-    public Employee(String name, String email, String cell,String gender) {
+    public Employee(String name, String email, String cell,String gender,String subject) {
         this.name = name;
         this.email = email;
         this.cell = cell;
         this.gender = gender;
+        this.subject = subject;
     }
 
     public int getId() {
@@ -65,6 +68,14 @@ public class Employee {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+    
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
     
     

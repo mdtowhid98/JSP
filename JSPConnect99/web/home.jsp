@@ -58,8 +58,8 @@
             <div class="date">
                 <%= new java.util.Date() %>
             </div>
-            <a href="employeeaddform.jsp">Add Employee</a><br>
-            <a href="viewallemployee.jsp">View All Employees</a>
+            <a href="employeeaddform.jsp">Add Student</a><br>
+            <a href="viewallemployee.jsp">View All Student</a>
         </div>
     </body>
 </html>

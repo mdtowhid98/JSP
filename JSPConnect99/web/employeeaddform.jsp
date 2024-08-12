@@ -71,6 +71,13 @@
             <input type="radio" name="gender" value="Female" required> Female
             <input type="radio" name="gender" value="Other" required> Other<br><br>
 
+            Subject: 
+            <select name="subject" required>
+                <option value="Bangla">Bangla</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+            </select><br><br>
+
             <input type="submit" value="Save">
         </form>
     </body>

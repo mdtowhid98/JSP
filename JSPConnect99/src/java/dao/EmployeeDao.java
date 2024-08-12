@@ -20,7 +20,7 @@ public class EmployeeDao {
     public static int saveEmployee(Employee e) {
 
         int status = 0;
-        sql = "insert into employee (name,email,cell,gender)values(?,?,?,?)";
+        sql = "insert into employee (name,email,cell,gender,subject)values(?,?,?,?,?)";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
@@ -29,6 +29,7 @@ public class EmployeeDao {
             ps.setString(2, e.getEmail());
             ps.setString(3, e.getCell());
             ps.setString(4, e.getGender());
+            ps.setString(5, e.getSubject());
 
             status = ps.executeUpdate();
 
@@ -58,7 +59,8 @@ public class EmployeeDao {
                         rs.getString("name"),
                         rs.getString("email"),
                         rs.getString("cell"),
-                        rs.getString("gender")
+                        rs.getString("gender"),
+                        rs.getString("subject")
                 );
                 elist.add(e);
             }
@@ -92,7 +94,7 @@ public class EmployeeDao {
 
     public static void updateEmployee(Employee e) {
 
-        sql = "update employee set name=?,email=?,cell=?,gender=? where id=?";
+        sql = "update employee set name=?,email=?,cell=?,gender=?,subject=? where id=?";
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
@@ -101,7 +103,8 @@ public class EmployeeDao {
             ps.setString(2, e.getEmail());
             ps.setString(3, e.getCell());
             ps.setString(4, e.getGender());
-            ps.setInt(5, e.getId());
+            ps.setString(5, e.getSubject());
+            ps.setInt(6, e.getId());
 
             ps.executeUpdate();
 
@@ -134,7 +137,8 @@ public class EmployeeDao {
                         rs.getString("name"), 
                         rs.getString("email"), 
                         rs.getString("cell"),
-                        rs.getString("gender")
+                        rs.getString("gender"),
+                        rs.getString("subject")
                 );
                 
             }
